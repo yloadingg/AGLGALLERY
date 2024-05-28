@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGL GALLERY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/564x/04/fb/fa/04fbfa14750bc3bc2251937504f37963.jpg");
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        nav {
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #f5f5f5;
+            transition: width 0.3s ease, right 0.3s ease;
+        }
+        nav a:hover::after {
+            width: 100%;
+            right: 0;
+        }
+        nav a:hover {
+            color: #bebebe;
+            font-size: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: #b8b5b5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: slide-up 1s ease-out forwards;
+        }
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .left, .right {
+            position: absolute;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: slide-up 1s ease-out forwards;
+
+
+            
+        }
+        .left {
+            left: 10%;
+        }
+        .right {
+            right: 11%;
+        }
+        h1 {
+            color: #333;
+        } 
+
+        h4 {
+            color: #000000;
+        }
+        p {
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #272727;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.4s ease, transform 0.5s ease, box-shadow 0.4s ease;
+        }
+        .button:hover {
+            background-color: #535353;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes slide-up {
+            from {
+                transform: translateY(100vh);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            background-color: transparent;
+            animation: slide-up 1s ease-out forwards;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #8d8d8d;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <body>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="ABOUT.html">ABOUT</a>  
+        </nav>
+        <div class="main-container">
+
+    <div class="main-container">
+        <div class="container">
+            <h1>READY TO EXPLORE THE POSSIBLE EVERYDAY LIFE OF ME AS AN IT STUDENT?</h1>
+            <a href="gallery.html" class="button">SEE GALLERY</a>
+        </div>
+        <div class="left">
+            <h1>A DAY OF AN IT STUDENT?</h1>
+        </div>
+        <div class="right">
+            <h1>YOU CAN MAKE YOURS TOO!</h1>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:example@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
